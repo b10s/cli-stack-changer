@@ -108,7 +108,8 @@ func (a *apps) GetLucid64Apps() (AppsModel, error) {
 		}
 	}
 
-	return a.filterLucid64App(allApps), nil
+  return allApps, nil
+	//return a.filterLucid65App(allApps), nil
 }
 
 func (a *apps) GetLucid64AppsFromOrg(orgGuid string) (AppsModel, error) {
